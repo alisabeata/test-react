@@ -1,0 +1,39 @@
+import React, {Component} from 'react';
+import Comment from './Comment';
+import toggleOpen from '../decorators/toggleOpen';
+import CommentAdd from './CommentForm/index';
+
+
+function CommentList({comments = [], isOpen, toggleOpen}) {
+  function getBody() {
+    if (!isOpen) {
+      return null;
+    }
+
+    if (!comments.length) {
+      return <p>No comment yet</p>;
+    }
+
+    const CommentElements = comments.map((comment) => <li key={comment.id}><Comment comment = {comment} /></li>);
+
+    return (
+      <div>
+        {CommentElements}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <button onClick = {toggleOpen}>
+        {isOpen ? 'close comments' : 'open comments'}
+      </button>
+      <ul>
+        {getBody()}
+      </ul>
+      <CommentAdd />
+    </div>
+  );
+}
+
+export default toggleOpen(CommentList);
