@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Article from './Article/index';
 import accordion from '../decorators/accordion';
+import {connect} from 'react-redux';
 
 class ArticleList extends Component {
   render() {
@@ -23,10 +24,13 @@ class ArticleList extends Component {
 }
 
 ArticleList.PropTypes = {
+  // from connect
   articles: PropTypes.array.isRequired,
   // from accordion
   openItemId: PropTypes.string,
   toggleOpenItem: PropTypes.func.isRequired,
 };
 
-export default accordion(ArticleList);
+export default connect(state => ({
+  articles: state.articles
+}))(accordion(ArticleList));

@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {findDOMNode} from 'react-dom';
+import {connect} from 'react-redux';
 import {CSSTransitionGroup} from 'react-transition-group';
 import PropTypes from 'prop-types';
 import CommentList from '../CommentList';
+import {deleteArticle} from '../../AC/index';
 import './article.css';
 
 
@@ -16,6 +18,14 @@ class Article extends Component {
     //console.log(findDOMNode(ref));
   }
 
+  handleDelete = () => {
+    const {deleteArticle, article} = this.props;
+
+    deleteArticle(article.id);
+
+    console.log('article is deleted');
+  }
+
   render() {
     const {article, isOpen, toggleOpen} = this.props;
 
@@ -25,6 +35,7 @@ class Article extends Component {
         <button onClick = {toggleOpen}>
           {isOpen ? 'close' : 'open'}
         </button>
+        <button onClick = {this.handleDelete}>delete</button>
         <CSSTransitionGroup
           transitionName = 'article'
           transitionAppear = {true}
@@ -65,4 +76,4 @@ Article.PropTypes = {
   toggleOpen: PropTypes.func
 };
 
-export default Article;
+export default connect(null, { deleteArticle })(Article);
