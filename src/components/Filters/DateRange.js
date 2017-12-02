@@ -1,57 +1,48 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 import DayPicker, { DateUtils } from 'react-day-picker';
+import {changeDateRange} from '../../AC/index';
 import 'react-day-picker/lib/style.css';
 
 
 class DateRange extends Component {
-  static defaultProps = {
-    numberOfMonths: 1,
-  };
+  constructor(props) {
+    super(props);
 
-  state = this.getInitialState();
-
-  getInitialState() {
-    return {
-      from: undefined,
-      to: undefined,
-    };
+    this.defaultRange = props.range;
   }
 
-  handleResetClick = () => {
-    this.setState(this.getInitialState());
+  handleResetClick = (day) => {
+    const { changeDateRange } = this.props;
+
+    changeDateRange(this.defaultRange);
   }
+
+
 
   handleDayClick = (day) => {
-    const range = DateUtils.addDayToRange(day, this.state);
-    this.setState(range);
+    const { changeDateRange, range } = this.props;
+
+    changeDateRange(DateUtils.addDayToRange(day, range));
   }
 
   render() {
-    const { from, to } = this.state;
+    const { from, to } = this.props.range;
+    const selectedRange = from && to && `${from.toLocaleDateString()} — ${to.toLocaleDateString()}`;
 
     return(
       <div>
         <DayPicker
           onDayClick = {this.handleDayClick}
-          selectedDays = {[from, { from, to }]}
+          selectedDays = { day => DateUtils.isDayInRange(day, { from, to })}
         />
-        <p>
-          {!from && !to && 'Please select the first day.'}
-          {from && !to && 'Please select the last day.'}
-          {from &&
-          to &&
-          `Selected from ${from.toLocaleDateString()} to
-                ${to.toLocaleDateString()}`}{' '}
-          {from && to && <button onClick={this.handleResetClick}>Reset</button>}
-        </p>
+        <p>{selectedRange}
+        {from && to && <button onClick = {this.handleResetClick}>Reset</button>}</p>
       </div>
     );
   }
 }
 
-DateRange.PropTypes = {
-
-};
-
-export default DateRange;
+export default connect(state => ({
+  range: state.filters.dateRange
+}), { changeDateRange })(DateRange);

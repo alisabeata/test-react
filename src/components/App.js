@@ -15,7 +15,7 @@ class App extends Component {
         <div>
           <Counter /><br /><br />
           <UserForm /><br /><br />
-          <Filters articles = {[]} /><br /><br />
+          <Filters /><br /><br />
           <ArticleList />
         </div>
       </Provider>
@@ -26,5 +26,6 @@ class App extends Component {
 App.PropTypes = {
   articles: PropTypes.array
 };
+
 
 export default App;
