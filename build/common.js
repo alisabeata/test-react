@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 53);
+/******/ 	return __webpack_require__(__webpack_require__.s = 54);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(54);
-} else {
   module.exports = __webpack_require__(55);
+} else {
+  module.exports = __webpack_require__(56);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -294,11 +294,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(65)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(66)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(66)();
+  module.exports = __webpack_require__(67)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -347,6 +347,25 @@ module.exports = emptyFunction;
 
 /***/ }),
 /* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(74);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -440,25 +459,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(73);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
 
 
 /***/ }),
@@ -738,6 +738,21 @@ module.exports = invariant;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var INCREMENT = exports.INCREMENT = 'INCREMENT';
+var CHANGE_DATE_RANGE = exports.CHANGE_DATE_RANGE = 'CHANGE_DATE_RANGE';
+var CHANGE_SELECTION = exports.CHANGE_SELECTION = 'CHANGE_SELECTION';
+var DELETE_ARTICLE = exports.DELETE_ARTICLE = 'DELETE_ARTICLE';
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -758,7 +773,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -827,7 +842,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -865,15 +880,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(56);
+  module.exports = __webpack_require__(57);
 } else {
-  module.exports = __webpack_require__(59);
+  module.exports = __webpack_require__(60);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 /*
@@ -955,7 +970,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1011,7 +1026,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(112);
+var	fixUrls = __webpack_require__(113);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1327,7 +1342,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1341,7 +1356,7 @@ exports.deleteArticle = deleteArticle;
 exports.changeDateRange = changeDateRange;
 exports.changeSelection = changeSelection;
 
-var _constants = __webpack_require__(14);
+var _constants = __webpack_require__(8);
 
 function increment() {
   return {
@@ -1371,21 +1386,6 @@ function changeSelection(selected) {
     payload: { selected: selected }
   };
 }
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var INCREMENT = exports.INCREMENT = 'INCREMENT';
-var CHANGE_DATE_RANGE = exports.CHANGE_DATE_RANGE = 'CHANGE_DATE_RANGE';
-var CHANGE_SELECTION = exports.CHANGE_SELECTION = 'CHANGE_SELECTION';
-var DELETE_ARTICLE = exports.DELETE_ARTICLE = 'DELETE_ARTICLE';
 
 /***/ }),
 /* 15 */
@@ -1636,11 +1636,11 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactInputAutosize = __webpack_require__(130);
+var _reactInputAutosize = __webpack_require__(133);
 
 var _reactInputAutosize2 = _interopRequireDefault(_reactInputAutosize);
 
@@ -1648,7 +1648,7 @@ var _classnames = __webpack_require__(18);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _defaultArrowRenderer = __webpack_require__(131);
+var _defaultArrowRenderer = __webpack_require__(134);
 
 var _defaultArrowRenderer2 = _interopRequireDefault(_defaultArrowRenderer);
 
@@ -1660,11 +1660,11 @@ var _defaultMenuRenderer = __webpack_require__(49);
 
 var _defaultMenuRenderer2 = _interopRequireDefault(_defaultMenuRenderer);
 
-var _defaultClearRenderer = __webpack_require__(132);
+var _defaultClearRenderer = __webpack_require__(135);
 
 var _defaultClearRenderer2 = _interopRequireDefault(_defaultClearRenderer);
 
-var _Option = __webpack_require__(133);
+var _Option = __webpack_require__(136);
 
 var _Option2 = _interopRequireDefault(_Option);
 
@@ -3005,7 +3005,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(7);
-  var warning = __webpack_require__(9);
+  var warning = __webpack_require__(10);
   var ReactPropTypesSecret = __webpack_require__(20);
   var loggedTypeFailures = {};
 }
@@ -3110,9 +3110,9 @@ function warning(message) {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(36);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
@@ -3145,9 +3145,9 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(84);
 
 
 
@@ -3517,7 +3517,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(57);
+var isTextNode = __webpack_require__(58);
 
 /*eslint-disable no-bitwise */
 
@@ -3604,13 +3604,13 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = connectAdvanced;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(31);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -3911,7 +3911,7 @@ selectorFactory) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
 
@@ -4167,7 +4167,7 @@ var ActionTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(78);
 
 
 /** Built-in value references. */
@@ -4376,7 +4376,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _chainFunction = __webpack_require__(97);
+var _chainFunction = __webpack_require__(98);
 
 var _chainFunction2 = _interopRequireDefault(_chainFunction);
 
@@ -4388,11 +4388,11 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _warning = __webpack_require__(98);
+var _warning = __webpack_require__(99);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _ChildMapping = __webpack_require__(99);
+var _ChildMapping = __webpack_require__(100);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6033,15 +6033,241 @@ exports.default = CreatableSelect;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var normalizedComments = exports.normalizedComments = [{
+  "id": "qwerqwer",
+  "user": "Gilliam Underwood",
+  "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+}, {
+  "id": "lkjhsdlfkg",
+  "user": "Dolly Franklin",
+  "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+}, {
+  "id": "zxcvzcxvzxcv",
+  "user": "Brennan Atkins",
+  "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+}, {
+  "id": "fghjfghjfghj",
+  "user": "Jodi Humphrey",
+  "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+}, {
+  "id": "ertyoertywte",
+  "user": "Joyce Weber",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "qwerqwertyy",
+  "user": "Gilliam Underwood",
+  "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+}, {
+  "id": "sdfgsdfghu7u7urtv",
+  "user": "Jodi Humphrey",
+  "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+}, {
+  "id": "kjfviudfv089w74",
+  "user": "Joyce Weber",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "r23uyrghasdfb7",
+  "user": "Joyce Weber",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "rflsbvyeuwr334rg5",
+  "user": "Random Name",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "234faasffasgfq3r3eda",
+  "user": "Felix Soyferman",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "23rfasdfasdvg",
+  "user": "Commodo Non",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "fqasfd4r35tga",
+  "user": "Sofia Michailenko",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "23qwfasdf3",
+  "user": "Brad McKeon",
+  "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+}, {
+  "id": "dadsafw4f45w",
+  "user": "Dolly Franklin",
+  "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+}, {
+  "id": "234erasfdastw4a",
+  "user": "Brennan Atkins",
+  "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+}];
+
+var normalizedArticles = exports.normalizedArticles = [{
+  "id": "56c782f18990ecf954f6e027",
+  "date": "2016-06-09T15:03:23.000Z",
+  "title": "Commodo qui incididunt",
+  "text": "Commodo qui incididunt ex ut ea nulla et eu aliquip duis. Aute deserunt excepteur ullamco fugiat sunt aliquip exercitation do sint incididunt. Amet consectetur sint irure reprehenderit fugiat amet mollit. In commodo mollit ullamco cillum pariatur eiusmod cillum aute mollit. Culpa non sint eiusmod ad dolor velit dolore voluptate do adipisicing. Cupidatat sint est magna officia qui magna eu elit qui excepteur fugiat duis ex labore.\n\nAliquip veniam ad reprehenderit mollit exercitation id enim ut exercitation. Esse irure ipsum minim laborum reprehenderit irure ut. Tempor excepteur nisi nulla nostrud amet id cillum. Sint velit sint officia aliqua sint quis deserunt.\n\nAliquip dolor cillum deserunt enim nulla dolor amet irure cupidatat commodo laboris id aliqua. Labore aliqua adipisicing Lorem id adipisicing. Ad cupidatat et do anim ex commodo elit magna ad consequat. Nostrud sit eu laborum ut consequat fugiat aute culpa. Lorem tempor quis sunt ad consequat excepteur est. Enim voluptate cillum Lorem ex fugiat ea qui. Irure aute magna dolore eiusmod minim non ad anim dolore sint et.",
+  "comments": ["qwerqwer", "lkjhsdlfkg", "zxcvzcxvzxcv", "fghjfghjfghj", "ertyoertywte"]
+}, {
+  "id": "56c782f17b4e0ba78c7ad717",
+  "date": "2016-04-09T18:03:23.000Z",
+  "title": "Quis occaecat",
+  "text": "Quis occaecat duis aliqua reprehenderit excepteur nisi deserunt excepteur elit magna. Magna cillum anim veniam deserunt voluptate occaecat irure fugiat laboris proident. Tempor do magna deserunt cillum laborum cillum ut.\n\nEst sunt cupidatat in deserunt sit aliqua duis. Mollit consequat duis aliquip occaecat pariatur non do eiusmod dolore amet deserunt ullamco. Ea minim tempor exercitation do tempor nostrud dolor minim veniam laboris commodo ex duis. Do nostrud voluptate ullamco consequat anim tempor voluptate incididunt aliqua tempor.\n\nIn irure quis nostrud do. Labore laboris irure culpa reprehenderit pariatur laboris in commodo culpa enim cillum magna. Magna ipsum pariatur sunt in reprehenderit ipsum duis officia voluptate adipisicing ad officia. Duis est sint mollit amet laborum magna non quis nulla ipsum in veniam sit. Amet velit consequat esse esse ea. Ipsum non do ut cillum in adipisicing labore non commodo do laborum sunt.",
+  "comments": ["qwerqwertyy", "sdfgsdfghu7u7urtv"]
+}, {
+  "id": "56c782f1978fdf9a0100df52",
+  "date": "2016-06-02T11:03:23.000Z",
+  "title": "Culpa Culpa",
+  "text": "Culpa dolor deserunt veniam irure amet officia excepteur labore nisi labore ad labore laborum aute. Ea irure sit exercitation ex. Aliquip dolore duis ullamco labore qui. Et anim irure laborum quis ipsum. Adipisicing culpa est ea velit veniam dolor nisi. Sit cupidatat velit commodo eu.\n\nUt nulla ut irure cillum irure sint sunt cupidatat tempor laboris incididunt elit occaecat fugiat. Reprehenderit enim cupidatat consectetur pariatur ad pariatur consequat veniam do fugiat Lorem laborum do velit. Nulla aute magna magna nisi officia et. Aute adipisicing eu eiusmod tempor exercitation sint non enim laboris dolor adipisicing.\n\nEa do sint pariatur voluptate ad culpa irure. Cillum pariatur deserunt fugiat elit. Exercitation labore amet deserunt magna. Velit veniam aute officia aliqua ipsum veniam pariatur. Aliquip ullamco fugiat officia non sunt ad consequat ipsum est esse commodo reprehenderit. Ad quis consectetur est exercitation fugiat eiusmod. Laborum reprehenderit esse qui irure.",
+  "comments": ["kjfviudfv089w74", "r23uyrghasdfb7"]
+}, {
+  "id": "56c782f1e17f4f9311dfaa2c",
+  "date": "2016-05-19T23:03:23.000Z",
+  "title": "Voluptate est officia",
+  "text": "Voluptate est officia pariatur tempor labore consequat consequat consectetur culpa enim. Amet laborum commodo in ullamco magna aliquip. Cupidatat veniam adipisicing labore irure nostrud sunt proident aute in. Sit Lorem consequat cillum enim id excepteur aliqua nostrud sint quis aute est est dolor. Sunt culpa est magna ad qui consequat exercitation. Enim sit ex do cupidatat laborum.\n\nOccaecat do tempor ex in dolor cupidatat do quis laboris anim. Et duis esse pariatur magna ex ipsum ut do ut id cillum. Nostrud fugiat sit minim ea. Nisi nulla sunt et et voluptate. Velit reprehenderit enim nulla mollit dolore excepteur Lorem do Lorem do cillum est qui. Ipsum mollit duis laboris incididunt non sit sunt proident. Aute voluptate id sunt aute proident officia.\n\nEnim ut nulla cillum officia cupidatat eiusmod amet laborum do labore id. Laborum in laboris aliquip anim consectetur magna reprehenderit consequat eiusmod esse Lorem consequat aliqua. Eiusmod voluptate mollit sint consectetur eu deserunt laboris ad et sunt nulla fugiat quis non. Dolor qui do cupidatat proident mollit amet sint pariatur non aliquip enim ex.",
+  "comments": ["rflsbvyeuwr334rg5", "234faasffasgfq3r3eda"]
+}, {
+  "id": "56c782f197fe2bad471b3740",
+  "date": "2016-06-04T15:03:23.000Z",
+  "title": "Ex sunt sunt aliqua",
+  "text": "Ex sunt sunt aliqua reprehenderit aliqua occaecat. Minim anim commodo officia veniam proident aute cillum eu sunt aute nostrud. Laboris fugiat velit ut pariatur occaecat adipisicing pariatur occaecat. Duis sint enim et consectetur quis pariatur laborum excepteur. Ipsum aliquip qui laborum commodo consectetur do velit veniam occaecat. Ad nisi dolor cillum elit magna dolor voluptate ea. Enim in duis ea consequat sunt Lorem aute.\n\nEst elit sunt quis officia reprehenderit do elit commodo eiusmod esse voluptate. Sit ipsum commodo sint voluptate culpa labore elit magna ullamco nostrud. Laboris magna magna anim labore mollit irure voluptate. Aute non magna aliqua aliqua sunt. Velit mollit consectetur aliqua id tempor ut. Tempor cupidatat aliquip excepteur occaecat incididunt nulla Lorem sint.\n\nNon commodo anim deserunt in et aliquip incididunt ut consectetur sunt esse commodo deserunt et. Tempor fugiat laboris cillum laboris labore. Deserunt quis ad do labore amet culpa officia. Esse et officia nostrud tempor occaecat officia anim incididunt amet sunt excepteur Lorem. Aute occaecat magna velit nisi sit anim consequat velit qui pariatur. Esse incididunt id officia aliqua anim ut et.",
+  "comments": ["23rfasdfasdvg", "fqasfd4r35tga"]
+}, {
+  "id": "56c782f1a2c2c3268ddb3206",
+  "date": "2016-06-08T19:03:23.000Z",
+  "title": "Commodo laborum sit nostru",
+  "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut.",
+  "comments": ["23qwfasdf3", "dadsafw4f45w", "234erasfdastw4a"]
+}, {
+  "id": "56c782fghgfc2c3268ddb3206",
+  "date": "2016-06-08T19:03:23.000Z",
+  "title": "Lorem Ipsum dolor",
+  "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut."
+}];
+
+var articles = exports.articles = [{
+  "id": "56c782f18990ecf954f6e027",
+  "date": "2016-06-09T15:03:23.000Z",
+  "title": "Commodo qui incididunt",
+  "text": "Commodo qui incididunt ex ut ea nulla et eu aliquip duis. Aute deserunt excepteur ullamco fugiat sunt aliquip exercitation do sint incididunt. Amet consectetur sint irure reprehenderit fugiat amet mollit. In commodo mollit ullamco cillum pariatur eiusmod cillum aute mollit. Culpa non sint eiusmod ad dolor velit dolore voluptate do adipisicing. Cupidatat sint est magna officia qui magna eu elit qui excepteur fugiat duis ex labore.\n\nAliquip veniam ad reprehenderit mollit exercitation id enim ut exercitation. Esse irure ipsum minim laborum reprehenderit irure ut. Tempor excepteur nisi nulla nostrud amet id cillum. Sint velit sint officia aliqua sint quis deserunt.\n\nAliquip dolor cillum deserunt enim nulla dolor amet irure cupidatat commodo laboris id aliqua. Labore aliqua adipisicing Lorem id adipisicing. Ad cupidatat et do anim ex commodo elit magna ad consequat. Nostrud sit eu laborum ut consequat fugiat aute culpa. Lorem tempor quis sunt ad consequat excepteur est. Enim voluptate cillum Lorem ex fugiat ea qui. Irure aute magna dolore eiusmod minim non ad anim dolore sint et.",
+  "comments": [{
+    "id": "qwerqwer",
+    "user": "Gilliam Underwood",
+    "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+  }, {
+    "id": "lkjhsdlfkg",
+    "user": "Dolly Franklin",
+    "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+  }, {
+    "id": "zxcvzcxvzxcv",
+    "user": "Brennan Atkins",
+    "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+  }, {
+    "id": "fghjfghjfghj",
+    "user": "Jodi Humphrey",
+    "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+  }, {
+    "id": "ertyoertywte",
+    "user": "Joyce Weber",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }]
+}, {
+  "id": "56c782f17b4e0ba78c7ad717",
+  "date": "2016-04-09T18:03:23.000Z",
+  "title": "Quis occaecat",
+  "text": "Quis occaecat duis aliqua reprehenderit excepteur nisi deserunt excepteur elit magna. Magna cillum anim veniam deserunt voluptate occaecat irure fugiat laboris proident. Tempor do magna deserunt cillum laborum cillum ut.\n\nEst sunt cupidatat in deserunt sit aliqua duis. Mollit consequat duis aliquip occaecat pariatur non do eiusmod dolore amet deserunt ullamco. Ea minim tempor exercitation do tempor nostrud dolor minim veniam laboris commodo ex duis. Do nostrud voluptate ullamco consequat anim tempor voluptate incididunt aliqua tempor.\n\nIn irure quis nostrud do. Labore laboris irure culpa reprehenderit pariatur laboris in commodo culpa enim cillum magna. Magna ipsum pariatur sunt in reprehenderit ipsum duis officia voluptate adipisicing ad officia. Duis est sint mollit amet laborum magna non quis nulla ipsum in veniam sit. Amet velit consequat esse esse ea. Ipsum non do ut cillum in adipisicing labore non commodo do laborum sunt.",
+  "comments": [{
+    "id": "qwerqwertyy",
+    "user": "Gilliam Underwood",
+    "text": "Velit anim deserunt elit velit est fugiat duis eiusmod eu do incididunt ut tempor voluptate. Officia dolor aliqua id anim mollit pariatur id commodo. Laborum minim non ut aliquip commodo est consectetur. Mollit eu aliqua tempor est nulla ullamco irure. Sit non amet et eiusmod cillum ex cillum anim incididunt ad laboris mollit. Sunt quis incididunt elit ea qui non ullamco aliquip consequat voluptate eiusmod est. Irure laboris amet culpa sit aliquip."
+  }, {
+    "id": "sdfgsdfghu7u7urtv",
+    "user": "Jodi Humphrey",
+    "text": "Non amet amet ut magna culpa dolore consequat occaecat. Commodo adipisicing laboris voluptate enim mollit mollit anim aliquip deserunt nostrud deserunt cillum est. Ad eu cupidatat dolor nostrud et minim id in dolor occaecat ad magna elit. Laboris elit laboris aliquip Lorem reprehenderit id amet reprehenderit laborum minim incididunt cupidatat eiusmod."
+  }]
+}, {
+  "id": "56c782f1978fdf9a0100df52",
+  "date": "2016-06-02T11:03:23.000Z",
+  "title": "Culpa Culpa",
+  "text": "Culpa dolor deserunt veniam irure amet officia excepteur labore nisi labore ad labore laborum aute. Ea irure sit exercitation ex. Aliquip dolore duis ullamco labore qui. Et anim irure laborum quis ipsum. Adipisicing culpa est ea velit veniam dolor nisi. Sit cupidatat velit commodo eu.\n\nUt nulla ut irure cillum irure sint sunt cupidatat tempor laboris incididunt elit occaecat fugiat. Reprehenderit enim cupidatat consectetur pariatur ad pariatur consequat veniam do fugiat Lorem laborum do velit. Nulla aute magna magna nisi officia et. Aute adipisicing eu eiusmod tempor exercitation sint non enim laboris dolor adipisicing.\n\nEa do sint pariatur voluptate ad culpa irure. Cillum pariatur deserunt fugiat elit. Exercitation labore amet deserunt magna. Velit veniam aute officia aliqua ipsum veniam pariatur. Aliquip ullamco fugiat officia non sunt ad consequat ipsum est esse commodo reprehenderit. Ad quis consectetur est exercitation fugiat eiusmod. Laborum reprehenderit esse qui irure.",
+  "comments": [{
+    "id": "kjfviudfv089w74",
+    "user": "Joyce Weber",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }, {
+    "id": "r23uyrghasdfb7",
+    "user": "Joyce Weber",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }]
+}, {
+  "id": "56c782f1e17f4f9311dfaa2c",
+  "date": "2016-05-19T23:03:23.000Z",
+  "title": "Voluptate est officia",
+  "text": "Voluptate est officia pariatur tempor labore consequat consequat consectetur culpa enim. Amet laborum commodo in ullamco magna aliquip. Cupidatat veniam adipisicing labore irure nostrud sunt proident aute in. Sit Lorem consequat cillum enim id excepteur aliqua nostrud sint quis aute est est dolor. Sunt culpa est magna ad qui consequat exercitation. Enim sit ex do cupidatat laborum.\n\nOccaecat do tempor ex in dolor cupidatat do quis laboris anim. Et duis esse pariatur magna ex ipsum ut do ut id cillum. Nostrud fugiat sit minim ea. Nisi nulla sunt et et voluptate. Velit reprehenderit enim nulla mollit dolore excepteur Lorem do Lorem do cillum est qui. Ipsum mollit duis laboris incididunt non sit sunt proident. Aute voluptate id sunt aute proident officia.\n\nEnim ut nulla cillum officia cupidatat eiusmod amet laborum do labore id. Laborum in laboris aliquip anim consectetur magna reprehenderit consequat eiusmod esse Lorem consequat aliqua. Eiusmod voluptate mollit sint consectetur eu deserunt laboris ad et sunt nulla fugiat quis non. Dolor qui do cupidatat proident mollit amet sint pariatur non aliquip enim ex.",
+  "comments": [{
+    "id": "rflsbvyeuwr334rg5",
+    "user": "Random Name",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }, {
+    "id": "234faasffasgfq3r3eda",
+    "user": "Felix Soyferman",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }]
+}, {
+  "id": "56c782f197fe2bad471b3740",
+  "date": "2016-06-04T15:03:23.000Z",
+  "title": "Ex sunt sunt aliqua",
+  "text": "Ex sunt sunt aliqua reprehenderit aliqua occaecat. Minim anim commodo officia veniam proident aute cillum eu sunt aute nostrud. Laboris fugiat velit ut pariatur occaecat adipisicing pariatur occaecat. Duis sint enim et consectetur quis pariatur laborum excepteur. Ipsum aliquip qui laborum commodo consectetur do velit veniam occaecat. Ad nisi dolor cillum elit magna dolor voluptate ea. Enim in duis ea consequat sunt Lorem aute.\n\nEst elit sunt quis officia reprehenderit do elit commodo eiusmod esse voluptate. Sit ipsum commodo sint voluptate culpa labore elit magna ullamco nostrud. Laboris magna magna anim labore mollit irure voluptate. Aute non magna aliqua aliqua sunt. Velit mollit consectetur aliqua id tempor ut. Tempor cupidatat aliquip excepteur occaecat incididunt nulla Lorem sint.\n\nNon commodo anim deserunt in et aliquip incididunt ut consectetur sunt esse commodo deserunt et. Tempor fugiat laboris cillum laboris labore. Deserunt quis ad do labore amet culpa officia. Esse et officia nostrud tempor occaecat officia anim incididunt amet sunt excepteur Lorem. Aute occaecat magna velit nisi sit anim consequat velit qui pariatur. Esse incididunt id officia aliqua anim ut et.",
+  "comments": [{
+    "id": "23rfasdfasdvg",
+    "user": "Commodo Non",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }, {
+    "id": "fqasfd4r35tga",
+    "user": "Sofia Michailenko",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }]
+}, {
+  "id": "56c782f1a2c2c3268ddb3206",
+  "date": "2016-06-08T19:03:23.000Z",
+  "title": "Commodo laborum sit nostru",
+  "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut.",
+  "comments": [{
+    "id": "23qwfasdf3",
+    "user": "Brad McKeon",
+    "text": "Non qui Lorem qui commodo sint in esse non aliqua pariatur mollit veniam. Elit labore ad nisi anim adipisicing tempor velit commodo adipisicing ipsum ut. Nostrud cillum aliquip adipisicing id do occaecat est eiusmod adipisicing duis. Magna dolore et non nisi in non cillum officia elit non esse proident irure aute. Proident mollit amet enim dolore eiusmod dolor qui. Eiusmod reprehenderit cillum sit deserunt nostrud enim duis excepteur. Excepteur pariatur sunt in ipsum id minim est mollit."
+  }, {
+    "id": "dadsafw4f45w",
+    "user": "Dolly Franklin",
+    "text": "Aliquip id nostrud adipisicing irure. Labore reprehenderit ea ex officia ullamco incididunt consequat elit amet quis commodo. Fugiat amet veniam cillum ut aliquip velit est esse minim fugiat eiusmod sint. Commodo ea in culpa deserunt."
+  }, {
+    "id": "234erasfdastw4a",
+    "user": "Brennan Atkins",
+    "text": "Nisi sit nisi cillum dolor fugiat sint do nostrud ex cillum cupidatat. Culpa do duis non et excepteur labore dolor culpa qui tempor veniam. Ex labore deserunt qui sit aute ad incididunt do cupidatat eiusmod reprehenderit ad. Qui laborum qui voluptate velit et consectetur ipsum enim dolore minim. Est sint velit tempor reprehenderit. Qui consectetur ad minim consequat."
+  }]
+}, {
+  "id": "56c782fghgfc2c3268ddb3206",
+  "date": "2016-06-08T19:03:23.000Z",
+  "title": "Lorem Ipsum dolor",
+  "text": "Commodo laborum sit nostrud reprehenderit cupidatat officia laboris. Ipsum minim culpa in enim. Voluptate dolor ea irure nisi incididunt enim magna.\n\nCupidatat quis cillum velit culpa tempor esse irure nostrud ea consectetur officia fugiat irure qui. Enim quis officia do in. Velit veniam ipsum consequat aliqua duis voluptate. Minim nisi ex aute ad.\n\nNisi Lorem ex tempor adipisicing labore. Quis occaecat fugiat pariatur labore culpa cillum laboris. Labore occaecat ut laborum sit ex do sit. Deserunt consectetur elit aute laboris est deserunt officia ullamco sit laboris officia aliquip. Aliqua ut sunt nostrud voluptate excepteur quis incididunt Lorem ut."
+}];
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(64);
+var _App = __webpack_require__(65);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -6050,7 +6276,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.querySelector('.app'));
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6062,7 +6288,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), do
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var m=__webpack_require__(4),n=__webpack_require__(8),p=__webpack_require__(3);
+var m=__webpack_require__(5),n=__webpack_require__(9),p=__webpack_require__(3);
 function q(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var r={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function t(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}t.prototype.isReactComponent={};t.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?q("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};t.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function u(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}function v(){}v.prototype=t.prototype;var w=u.prototype=new v;w.constructor=u;m(w,t.prototype);w.isPureReactComponent=!0;function x(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||r}var y=x.prototype=new v;y.constructor=x;m(y,t.prototype);y.unstable_isAsyncReactComponent=!0;y.render=function(){return this.props.children};
@@ -6079,7 +6305,7 @@ version:"16.1.1",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurren
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6098,10 +6324,10 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 var invariant = __webpack_require__(7);
-var emptyObject = __webpack_require__(8);
-var warning = __webpack_require__(9);
+var emptyObject = __webpack_require__(9);
+var warning = __webpack_require__(10);
 var emptyFunction = __webpack_require__(3);
 var checkPropTypes = __webpack_require__(19);
 
@@ -7430,7 +7656,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7445,7 +7671,7 @@ module.exports = react;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),m=__webpack_require__(25),A=__webpack_require__(4),B=__webpack_require__(3),ca=__webpack_require__(26),da=__webpack_require__(27),ea=__webpack_require__(28),ha=__webpack_require__(29),ia=__webpack_require__(30),C=__webpack_require__(8);
+var aa=__webpack_require__(0),m=__webpack_require__(25),A=__webpack_require__(5),B=__webpack_require__(3),ca=__webpack_require__(26),da=__webpack_require__(27),ea=__webpack_require__(28),ha=__webpack_require__(29),ia=__webpack_require__(30),C=__webpack_require__(9);
 function D(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:D("227");
 var la={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function qa(a,b){return(a&b)===b}
 var ra={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ra,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){sa.hasOwnProperty(f)?D("48",f):void 0;var g=f.toLowerCase(),k=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:qa(k,b.MUST_USE_PROPERTY),
@@ -7664,7 +7890,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:qb,bundleType:0,version:"16.1.1",r
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7679,7 +7905,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:qb,bundleType:0,version:"16.1.1",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(58);
+var isNode = __webpack_require__(59);
 
 /**
  * @param {*} object The object to check.
@@ -7692,7 +7918,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7720,7 +7946,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7741,19 +7967,19 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(0);
 var invariant = __webpack_require__(7);
-var warning = __webpack_require__(9);
+var warning = __webpack_require__(10);
 var ExecutionEnvironment = __webpack_require__(25);
-var _assign = __webpack_require__(4);
+var _assign = __webpack_require__(5);
 var emptyFunction$1 = __webpack_require__(3);
 var EventListener = __webpack_require__(26);
 var getActiveElement = __webpack_require__(27);
 var shallowEqual = __webpack_require__(28);
 var containsNode = __webpack_require__(29);
 var focusNode = __webpack_require__(30);
-var emptyObject = __webpack_require__(8);
+var emptyObject = __webpack_require__(9);
 var checkPropTypes = __webpack_require__(19);
-var hyphenateStyleName = __webpack_require__(60);
-var camelizeStyleName = __webpack_require__(62);
+var hyphenateStyleName = __webpack_require__(61);
+var camelizeStyleName = __webpack_require__(63);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -23128,7 +23354,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23143,7 +23369,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(61);
+var hyphenate = __webpack_require__(62);
 
 var msPattern = /^ms-/;
 
@@ -23170,7 +23396,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23206,7 +23432,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23221,7 +23447,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(63);
+var camelize = __webpack_require__(64);
 
 var msPattern = /^-ms-/;
 
@@ -23249,7 +23475,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23284,7 +23510,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23304,27 +23530,27 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _ArticleList = __webpack_require__(67);
+var _ArticleList = __webpack_require__(68);
 
 var _ArticleList2 = _interopRequireDefault(_ArticleList);
 
-var _UserForm = __webpack_require__(116);
+var _UserForm = __webpack_require__(119);
 
 var _UserForm2 = _interopRequireDefault(_UserForm);
 
-var _Filters = __webpack_require__(117);
+var _Filters = __webpack_require__(120);
 
 var _Filters2 = _interopRequireDefault(_Filters);
 
-var _Counter = __webpack_require__(137);
+var _Counter = __webpack_require__(140);
 
 var _Counter2 = _interopRequireDefault(_Counter);
 
-var _store = __webpack_require__(138);
+var _store = __webpack_require__(141);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23377,7 +23603,7 @@ App.PropTypes = {
 exports.default = App;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23392,8 +23618,8 @@ exports.default = App;
 
 var emptyFunction = __webpack_require__(3);
 var invariant = __webpack_require__(7);
-var warning = __webpack_require__(9);
-var assign = __webpack_require__(4);
+var warning = __webpack_require__(10);
+var assign = __webpack_require__(5);
 
 var ReactPropTypesSecret = __webpack_require__(20);
 var checkPropTypes = __webpack_require__(19);
@@ -23927,7 +24153,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23992,7 +24218,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24012,17 +24238,17 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _index = __webpack_require__(68);
+var _index = __webpack_require__(69);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _accordion = __webpack_require__(115);
+var _accordion = __webpack_require__(116);
 
 var _accordion2 = _interopRequireDefault(_accordion);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _index3 = __webpack_require__(144);
+var _index3 = __webpack_require__(117);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24089,7 +24315,7 @@ exports.default = (0, _reactRedux.connect)(function (state) {
 })((0, _accordion2.default)(ArticleList));
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24105,25 +24331,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _reactTransitionGroup = __webpack_require__(95);
+var _reactTransitionGroup = __webpack_require__(96);
 
 var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _CommentList = __webpack_require__(106);
+var _CommentList = __webpack_require__(107);
 
 var _CommentList2 = _interopRequireDefault(_CommentList);
 
-var _index = __webpack_require__(13);
+var _index = __webpack_require__(14);
 
-__webpack_require__(113);
+__webpack_require__(114);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24245,7 +24471,7 @@ Article.PropTypes = {
 exports.default = (0, _reactRedux.connect)(null, { deleteArticle: _index.deleteArticle })(Article);
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24331,7 +24557,7 @@ function createProvider() {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24403,7 +24629,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24462,7 +24688,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24561,17 +24787,17 @@ var Subscription = function () {
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export createConnect */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(94);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -24677,7 +24903,7 @@ function createConnect() {
 /* harmony default export */ __webpack_exports__["a"] = (createConnect());
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24714,7 +24940,7 @@ function shallowEqual(objA, objB) {
 }
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24745,13 +24971,13 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(81);
 
 
 
@@ -24783,11 +25009,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(79);
 
 
 /** Detect free variable `self`. */
@@ -24800,7 +25026,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24812,7 +25038,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(35)))
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24866,7 +25092,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24895,11 +25121,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(83);
 
 
 /** Built-in value references. */
@@ -24909,7 +25135,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24931,7 +25157,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24967,14 +25193,14 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(85);
+module.exports = __webpack_require__(86);
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24984,7 +25210,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(87);
+var _ponyfill = __webpack_require__(88);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -25007,10 +25233,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35), __webpack_require__(86)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35), __webpack_require__(87)(module)))
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -25038,7 +25264,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25067,7 +25293,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25208,7 +25434,7 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25262,7 +25488,7 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25318,7 +25544,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25340,7 +25566,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25397,14 +25623,14 @@ function whenMergePropsIsOmitted(mergeProps) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export impureFinalPropsSelectorFactory */
 /* unused harmony export pureFinalPropsSelectorFactory */
 /* harmony export (immutable) */ __webpack_exports__["a"] = finalPropsSelectorFactory;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(95);
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -25510,7 +25736,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25535,13 +25761,13 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 }
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CSSTransitionGroup = __webpack_require__(96);
+var _CSSTransitionGroup = __webpack_require__(97);
 
 var _CSSTransitionGroup2 = _interopRequireDefault(_CSSTransitionGroup);
 
@@ -25557,7 +25783,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25579,7 +25805,7 @@ var _TransitionGroup = __webpack_require__(40);
 
 var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-var _CSSTransitionGroupChild = __webpack_require__(100);
+var _CSSTransitionGroupChild = __webpack_require__(101);
 
 var _CSSTransitionGroupChild2 = _interopRequireDefault(_CSSTransitionGroupChild);
 
@@ -25658,7 +25884,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports) {
 
 
@@ -25684,7 +25910,7 @@ module.exports = function chain(){
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25752,7 +25978,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25849,7 +26075,7 @@ function mergeChildMappings(prev, next) {
 }
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25859,19 +26085,19 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _addClass = __webpack_require__(101);
+var _addClass = __webpack_require__(102);
 
 var _addClass2 = _interopRequireDefault(_addClass);
 
-var _removeClass = __webpack_require__(103);
+var _removeClass = __webpack_require__(104);
 
 var _removeClass2 = _interopRequireDefault(_removeClass);
 
-var _requestAnimationFrame = __webpack_require__(104);
+var _requestAnimationFrame = __webpack_require__(105);
 
 var _requestAnimationFrame2 = _interopRequireDefault(_requestAnimationFrame);
 
-var _properties = __webpack_require__(105);
+var _properties = __webpack_require__(106);
 
 var _react = __webpack_require__(0);
 
@@ -25881,7 +26107,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactDom = __webpack_require__(10);
+var _reactDom = __webpack_require__(11);
 
 var _PropTypes = __webpack_require__(42);
 
@@ -26085,7 +26311,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26096,7 +26322,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = addClass;
 
-var _hasClass = __webpack_require__(102);
+var _hasClass = __webpack_require__(103);
 
 var _hasClass2 = _interopRequireDefault(_hasClass);
 
@@ -26108,7 +26334,7 @@ function addClass(element, className) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26124,7 +26350,7 @@ function hasClass(element, className) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26135,7 +26361,7 @@ module.exports = function removeClass(element, className) {
 };
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26194,7 +26420,7 @@ exports.default = compatRaf;
 module.exports = exports['default'];
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26310,7 +26536,7 @@ function getTransitionProperties() {
 }
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26324,15 +26550,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Comment = __webpack_require__(107);
+var _Comment = __webpack_require__(108);
 
 var _Comment2 = _interopRequireDefault(_Comment);
 
-var _toggleOpen = __webpack_require__(108);
+var _toggleOpen = __webpack_require__(109);
 
 var _toggleOpen2 = _interopRequireDefault(_toggleOpen);
 
-var _index = __webpack_require__(109);
+var _index = __webpack_require__(110);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -26357,11 +26583,11 @@ function CommentList(_ref) {
       );
     }
 
-    var CommentElements = comments.map(function (comment) {
+    var CommentElements = comments.map(function (id) {
       return _react2.default.createElement(
         'li',
-        { key: comment.id },
-        _react2.default.createElement(_Comment2.default, { comment: comment })
+        { key: id },
+        _react2.default.createElement(_Comment2.default, { id: id })
       );
     });
 
@@ -26392,7 +26618,7 @@ function CommentList(_ref) {
 exports.default = (0, _toggleOpen2.default)(CommentList);
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26410,6 +26636,10 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _reactRedux = __webpack_require__(4);
+
+var _index = __webpack_require__(117);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Comment(_ref) {
@@ -26421,7 +26651,7 @@ function Comment(_ref) {
     _react2.default.createElement(
       'strong',
       null,
-      comment.name
+      comment.user
     ),
     _react2.default.createElement('br', null),
     _react2.default.createElement(
@@ -26433,16 +26663,22 @@ function Comment(_ref) {
 }
 
 Comment.propTypes = {
+  id: _propTypes2.default.string.isRequired,
+  // from connect
   comment: _propTypes2.default.shape({
-    name: _propTypes2.default.string.isRequired,
+    user: _propTypes2.default.string.isRequired,
     text: _propTypes2.default.string.isRequired
   })
 };
 
-exports.default = Comment;
+exports.default = (0, _reactRedux.connect)(function (state, ownProps) {
+  return {
+    comment: (0, _index.commentSelector)(state, ownProps)
+  };
+})(Comment);
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26508,7 +26744,7 @@ exports.default = function (OriginalComponent) {
 };
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26528,7 +26764,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-__webpack_require__(110);
+__webpack_require__(111);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26633,13 +26869,13 @@ var CommentAdd = function (_Component) {
 exports.default = CommentAdd;
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(111);
+var content = __webpack_require__(112);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -26647,7 +26883,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(12)(content, options);
+var update = __webpack_require__(13)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -26664,10 +26900,10 @@ if(false) {
 }
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(11)(undefined);
+exports = module.exports = __webpack_require__(12)(undefined);
 // imports
 
 
@@ -26678,7 +26914,7 @@ exports.push([module.i, ".fild-error {\n  border: 1px solid red;\n  box-shadow: 
 
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports) {
 
 
@@ -26773,13 +27009,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(114);
+var content = __webpack_require__(115);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -26787,7 +27023,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(12)(content, options);
+var update = __webpack_require__(13)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -26804,10 +27040,10 @@ if(false) {
 }
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(11)(undefined);
+exports = module.exports = __webpack_require__(12)(undefined);
 // imports
 
 
@@ -26818,7 +27054,7 @@ exports.push([module.i, ".article-enter {\n  opacity: 0.01;\n}\n\n.article-enter
 
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26888,7 +27124,185 @@ exports.default = function (OriginalComponent) {
 };
 
 /***/ }),
-/* 116 */
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.commentSelector = exports.filtratedArticlesSelector = undefined;
+
+var _reselect = __webpack_require__(118);
+
+var filtersGetter = function filtersGetter(state) {
+  return state.filters;
+};
+var articlesGetter = function articlesGetter(state) {
+  return state.articles;
+};
+var commentsGetter = function commentsGetter(state) {
+  return state.comments;
+};
+var idGetter = function idGetter(state, props) {
+  return props.id;
+};
+
+var filtratedArticlesSelector = exports.filtratedArticlesSelector = (0, _reselect.createSelector)(filtersGetter, articlesGetter, function (filters, articles) {
+  var selected = filters.selected,
+      _filters$dateRange = filters.dateRange,
+      from = _filters$dateRange.from,
+      to = _filters$dateRange.to;
+
+
+  return articles.filter(function (article) {
+    var published = Date.parse(article.date);
+
+    return (!selected.length || selected.includes(article.id)) && (!from || !to || published > from && published < to);
+  });
+});
+
+var commentSelector = exports.commentSelector = (0, _reselect.createSelector)(commentsGetter, idGetter, function (comments, id) {
+  return comments.find(function (comment) {
+    return comment.id === id;
+  });
+});
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.defaultMemoize = defaultMemoize;
+exports.createSelectorCreator = createSelectorCreator;
+exports.createStructuredSelector = createStructuredSelector;
+function defaultEqualityCheck(a, b) {
+  return a === b;
+}
+
+function areArgumentsShallowlyEqual(equalityCheck, prev, next) {
+  if (prev === null || next === null || prev.length !== next.length) {
+    return false;
+  }
+
+  // Do this in a for loop (and not a `forEach` or an `every`) so we can determine equality as fast as possible.
+  var length = prev.length;
+  for (var i = 0; i < length; i++) {
+    if (!equalityCheck(prev[i], next[i])) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function defaultMemoize(func) {
+  var equalityCheck = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultEqualityCheck;
+
+  var lastArgs = null;
+  var lastResult = null;
+  // we reference arguments instead of spreading them for performance reasons
+  return function () {
+    if (!areArgumentsShallowlyEqual(equalityCheck, lastArgs, arguments)) {
+      // apply arguments instead of spreading for performance.
+      lastResult = func.apply(null, arguments);
+    }
+
+    lastArgs = arguments;
+    return lastResult;
+  };
+}
+
+function getDependencies(funcs) {
+  var dependencies = Array.isArray(funcs[0]) ? funcs[0] : funcs;
+
+  if (!dependencies.every(function (dep) {
+    return typeof dep === 'function';
+  })) {
+    var dependencyTypes = dependencies.map(function (dep) {
+      return typeof dep;
+    }).join(', ');
+    throw new Error('Selector creators expect all input-selectors to be functions, ' + ('instead received the following types: [' + dependencyTypes + ']'));
+  }
+
+  return dependencies;
+}
+
+function createSelectorCreator(memoize) {
+  for (var _len = arguments.length, memoizeOptions = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    memoizeOptions[_key - 1] = arguments[_key];
+  }
+
+  return function () {
+    for (var _len2 = arguments.length, funcs = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      funcs[_key2] = arguments[_key2];
+    }
+
+    var recomputations = 0;
+    var resultFunc = funcs.pop();
+    var dependencies = getDependencies(funcs);
+
+    var memoizedResultFunc = memoize.apply(undefined, [function () {
+      recomputations++;
+      // apply arguments instead of spreading for performance.
+      return resultFunc.apply(null, arguments);
+    }].concat(memoizeOptions));
+
+    // If a selector is called with the exact same arguments we don't need to traverse our dependencies again.
+    var selector = defaultMemoize(function () {
+      var params = [];
+      var length = dependencies.length;
+
+      for (var i = 0; i < length; i++) {
+        // apply arguments instead of spreading and mutate a local list of params for performance.
+        params.push(dependencies[i].apply(null, arguments));
+      }
+
+      // apply arguments instead of spreading for performance.
+      return memoizedResultFunc.apply(null, params);
+    });
+
+    selector.resultFunc = resultFunc;
+    selector.recomputations = function () {
+      return recomputations;
+    };
+    selector.resetRecomputations = function () {
+      return recomputations = 0;
+    };
+    return selector;
+  };
+}
+
+var createSelector = exports.createSelector = createSelectorCreator(defaultMemoize);
+
+function createStructuredSelector(selectors) {
+  var selectorCreator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : createSelector;
+
+  if (typeof selectors !== 'object') {
+    throw new Error('createStructuredSelector expects first argument to be an object ' + ('where each property is a selector, instead received a ' + typeof selectors));
+  }
+  var objectKeys = Object.keys(selectors);
+  return selectorCreator(objectKeys.map(function (key) {
+    return selectors[key];
+  }), function () {
+    for (var _len3 = arguments.length, values = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+      values[_key3] = arguments[_key3];
+    }
+
+    return values.reduce(function (composition, value, index) {
+      composition[objectKeys[index]] = value;
+      return composition;
+    }, {});
+  });
+}
+
+/***/ }),
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26960,7 +27374,7 @@ var UserForm = function (_Component) {
 exports.default = UserForm;
 
 /***/ }),
-/* 117 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26980,11 +27394,11 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _DateRange = __webpack_require__(118);
+var _DateRange = __webpack_require__(121);
 
 var _DateRange2 = _interopRequireDefault(_DateRange);
 
-var _SelectFilter = __webpack_require__(128);
+var _SelectFilter = __webpack_require__(131);
 
 var _SelectFilter2 = _interopRequireDefault(_SelectFilter);
 
@@ -27027,7 +27441,7 @@ Filters.PropTypes = {
 exports.default = Filters;
 
 /***/ }),
-/* 118 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27043,15 +27457,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _reactDayPicker = __webpack_require__(119);
+var _reactDayPicker = __webpack_require__(122);
 
 var _reactDayPicker2 = _interopRequireDefault(_reactDayPicker);
 
-var _index = __webpack_require__(13);
+var _index = __webpack_require__(14);
 
-__webpack_require__(126);
+__webpack_require__(129);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27131,19 +27545,19 @@ exports.default = (0, _reactRedux.connect)(function (state) {
 }, { changeDateRange: _index.changeDateRange })(DateRange);
 
 /***/ }),
-/* 119 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* eslint-disable no-var */
 /* eslint-env node */
 
-var DayPicker = __webpack_require__(120);
+var DayPicker = __webpack_require__(123);
 var DateUtils = __webpack_require__(6);
 var LocaleUtils = __webpack_require__(24);
 var ModifiersUtils = __webpack_require__(45);
 var Weekday = __webpack_require__(46).default;
 var Navbar = __webpack_require__(43).default;
-var PropTypes = __webpack_require__(125);
+var PropTypes = __webpack_require__(128);
 
 module.exports = DayPicker.default || DayPicker;
 module.exports.DateUtils = DateUtils.default || DateUtils;
@@ -27155,7 +27569,7 @@ module.exports.PropTypes = PropTypes;
 
 
 /***/ }),
-/* 120 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27177,7 +27591,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Caption = __webpack_require__(121);
+var _Caption = __webpack_require__(124);
 
 var _Caption2 = _interopRequireDefault(_Caption);
 
@@ -27185,7 +27599,7 @@ var _Navbar = __webpack_require__(43);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Month = __webpack_require__(122);
+var _Month = __webpack_require__(125);
 
 var _Month2 = _interopRequireDefault(_Month);
 
@@ -27754,7 +28168,7 @@ DayPicker.propTypes = process.env.NODE_ENV !== "production" ? {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 121 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27837,7 +28251,7 @@ Caption.propTypes = process.env.NODE_ENV !== "production" ? {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 122 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27857,11 +28271,11 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Weekdays = __webpack_require__(123);
+var _Weekdays = __webpack_require__(126);
 
 var _Weekdays2 = _interopRequireDefault(_Weekdays);
 
-var _Day = __webpack_require__(124);
+var _Day = __webpack_require__(127);
 
 var _Day2 = _interopRequireDefault(_Day);
 
@@ -28095,7 +28509,7 @@ Month.propTypes = process.env.NODE_ENV !== "production" ? {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 123 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28202,7 +28616,7 @@ Weekdays.propTypes = process.env.NODE_ENV !== "production" ? {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 124 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28218,7 +28632,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _objectAssign = __webpack_require__(4);
+var _objectAssign = __webpack_require__(5);
 
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -28403,7 +28817,7 @@ Day.propTypes = process.env.NODE_ENV !== "production" ? {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 125 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28445,13 +28859,13 @@ exports.default = PrimitiveTypes;
 //# sourceMappingURL=PropTypes.js.map
 
 /***/ }),
-/* 126 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(127);
+var content = __webpack_require__(130);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -28459,7 +28873,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(12)(content, options);
+var update = __webpack_require__(13)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -28476,10 +28890,10 @@ if(false) {
 }
 
 /***/ }),
-/* 127 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(11)(undefined);
+exports = module.exports = __webpack_require__(12)(undefined);
 // imports
 
 
@@ -28490,7 +28904,7 @@ exports.push([module.i, "/* DayPicker styles */\n\n.DayPicker {\n  display: inli
 
 
 /***/ }),
-/* 128 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28510,15 +28924,15 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _reactSelect = __webpack_require__(129);
+var _reactSelect = __webpack_require__(132);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _index = __webpack_require__(13);
+var _index = __webpack_require__(14);
 
-__webpack_require__(135);
+__webpack_require__(138);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28590,7 +29004,7 @@ exports.default = (0, _reactRedux.connect)(function (state) {
 }, { changeSelection: _index.changeSelection })(SelectFilter);
 
 /***/ }),
-/* 129 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28609,7 +29023,7 @@ var _Async = __webpack_require__(51);
 
 var _Async2 = _interopRequireDefault(_Async);
 
-var _AsyncCreatable = __webpack_require__(134);
+var _AsyncCreatable = __webpack_require__(137);
 
 var _AsyncCreatable2 = _interopRequireDefault(_AsyncCreatable);
 
@@ -28635,7 +29049,7 @@ exports.Creatable = _Creatable2.default;
 exports.Value = _Value2.default;
 
 /***/ }),
-/* 130 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28872,7 +29286,7 @@ AutosizeInput.defaultProps = {
 exports.default = AutosizeInput;
 
 /***/ }),
-/* 131 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28907,7 +29321,7 @@ arrowRenderer.propTypes = {
 };
 
 /***/ }),
-/* 132 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28932,7 +29346,7 @@ function clearRenderer() {
 };
 
 /***/ }),
-/* 133 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29097,7 +29511,7 @@ Option.propTypes = {
 exports.default = Option;
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29198,13 +29612,13 @@ var AsyncCreatableSelect = function (_React$Component) {
 exports.default = AsyncCreatableSelect;
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(136);
+var content = __webpack_require__(139);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -29212,7 +29626,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(12)(content, options);
+var update = __webpack_require__(13)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -29229,10 +29643,10 @@ if(false) {
 }
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(11)(undefined);
+exports = module.exports = __webpack_require__(12)(undefined);
 // imports
 
 
@@ -29243,7 +29657,7 @@ exports.push([module.i, "/**\n * React Select\n * ============\n * Created by Je
 
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29263,9 +29677,9 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(5);
+var _reactRedux = __webpack_require__(4);
 
-var _AC = __webpack_require__(13);
+var _AC = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29338,7 +29752,7 @@ exports.default = (0, _reactRedux.connect)(function (state) {
 }, { increment: _AC.increment })(Counter);
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29350,7 +29764,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(22);
 
-var _reducer = __webpack_require__(139);
+var _reducer = __webpack_require__(142);
 
 var _reducer2 = _interopRequireDefault(_reducer);
 
@@ -29364,7 +29778,7 @@ window.store = store;
 exports.default = store;
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29376,15 +29790,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(22);
 
-var _counter = __webpack_require__(140);
+var _counter = __webpack_require__(143);
 
 var _counter2 = _interopRequireDefault(_counter);
 
-var _articles = __webpack_require__(141);
+var _articles = __webpack_require__(144);
 
 var _articles2 = _interopRequireDefault(_articles);
 
-var _filters = __webpack_require__(143);
+var _comments = __webpack_require__(145);
+
+var _comments2 = _interopRequireDefault(_comments);
+
+var _filters = __webpack_require__(146);
 
 var _filters2 = _interopRequireDefault(_filters);
 
@@ -29393,11 +29811,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _redux.combineReducers)({
   count: _counter2.default,
   articles: _articles2.default,
+  comments: _comments2.default,
   filters: _filters2.default
 });
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29407,7 +29826,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _constants = __webpack_require__(14);
+var _constants = __webpack_require__(8);
 
 exports.default = function () {
   var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -29424,7 +29843,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29434,12 +29853,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _fixtures = __webpack_require__(142);
+var _fixtures = __webpack_require__(53);
 
-var _constants = __webpack_require__(14);
+var _constants = __webpack_require__(8);
 
 exports.default = function () {
-  var articleState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _fixtures.articles;
+  var articleState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _fixtures.normalizedArticles;
   var action = arguments[1];
   var type = action.type,
       payload = action.payload;
@@ -29456,7 +29875,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29465,102 +29884,30 @@ exports.default = function () {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var articles = exports.articles = [{
-  "id": "5a0c22ecf1e31a4fd0a796ae",
-  "title": "ex laboris",
-  "text": "Reprehenderit elit magna in voluptate minim aliqua sint commodo dolore. Incididunt officia in in ipsum pariatur duis dolore voluptate consectetur culpa reprehenderit pariatur id sunt. Nostrud sunt anim esse minim id consectetur. Deserunt officia adipisicing minim tempor ad ad anim. Elit deserunt eu est nulla occaecat adipisicing et anim.\r\n",
-  "date": "2017-11-26T09:13:58 -02:00",
-  "comments": [{
-    "id": 0,
-    "name": "Bentley Neal",
-    "text": "Qui ullamco excepteur deserunt tempor culpa proident. Ad Lorem ex exercitation cupidatat. Mollit sunt culpa eu consectetur officia sit ullamco ut laborum est nulla aliqua ex do. Esse esse cupidatat dolor Lorem ea quis in. Reprehenderit occaecat labore nisi aliqua ad eiusmod Lorem nulla excepteur labore. Consequat reprehenderit est dolor magna nostrud. Aliqua culpa tempor laborum ullamco ad.\r\n"
-  }, {
-    "id": 1,
-    "name": "Candy Patton",
-    "text": "Do proident culpa cupidatat officia ullamco amet voluptate aliquip aliquip dolore aliqua excepteur excepteur. Esse excepteur irure anim veniam sunt est laboris culpa mollit consequat. Eu laborum ut ea ex laborum consectetur nisi nulla qui sit ipsum sit laboris. Eu cupidatat exercitation nisi incididunt sint velit veniam consectetur proident esse anim Lorem.\r\n"
-  }, {
-    "id": 2,
-    "name": "Moses Guerrero",
-    "text": "Eu qui duis Lorem adipisicing nostrud nostrud magna. Pariatur ad aute nisi adipisicing voluptate nulla ea in ipsum exercitation enim. Do et id culpa laborum officia. Duis qui irure minim non aliqua deserunt do aliqua minim pariatur aute sint. Mollit nisi nisi laborum nisi quis. Id occaecat anim do officia nostrud magna.\r\n"
-  }]
-}, {
-  "id": "5a0c22ecd46c4e1320f60703",
-  "title": "reprehenderit exercitation",
-  "text": "Culpa est aliquip nulla ex excepteur culpa consectetur do quis magna. Amet commodo irure commodo nisi ea proident ut velit eu aute et ut commodo eiusmod. Sit sint minim dolore deserunt ut est irure commodo proident. Ad ullamco amet excepteur velit veniam aliqua elit. Ipsum consequat aliqua do ipsum. Excepteur esse veniam excepteur et in nisi.\r\n",
-  "date": "2017-09-12T04:56:48 -03:00",
-  "comments": [{
-    "id": 0,
-    "name": "Marci Duke",
-    "text": "Veniam in officia ut deserunt cillum esse dolor dolor fugiat non commodo ea incididunt. Cupidatat ea irure ea minim ipsum aliqua duis. Mollit elit fugiat do esse esse labore do. Anim magna est reprehenderit ipsum. Amet ad aute minim consectetur reprehenderit nisi.\r\n"
-  }, {
-    "id": 1,
-    "name": "Hebert Rasmussen",
-    "text": "Nulla ut dolore esse anim in eu in in. Veniam incididunt anim consectetur proident laborum ex voluptate ad nulla in. Ex adipisicing adipisicing veniam nulla mollit adipisicing incididunt occaecat consectetur. Anim deserunt non ullamco eu incididunt tempor ullamco laboris nisi dolor ea ad duis et. Eiusmod excepteur in Lorem laboris eu ipsum eiusmod aliqua veniam duis.\r\n"
-  }, {
-    "id": 2,
-    "name": "Lolita Zamora",
-    "text": "Reprehenderit voluptate quis eu reprehenderit fugiat tempor commodo aute. Occaecat non fugiat aliqua magna deserunt mollit dolor nulla eiusmod. Id mollit fugiat magna excepteur duis esse eu Lorem veniam cupidatat reprehenderit. Ipsum duis fugiat adipisicing laborum ea. Amet adipisicing eu nostrud ex ullamco consectetur mollit amet sunt aliquip tempor. Duis magna adipisicing exercitation ipsum.\r\n"
-  }]
-}, {
-  "id": "5a0c22ec410848de798035cb",
-  "title": "culpa culpa",
-  "text": "Labore fugiat fugiat ex culpa proident magna mollit eu eiusmod nostrud veniam ex laboris duis. Quis nisi irure qui nostrud duis eiusmod enim sit qui culpa esse et et. Minim proident est esse commodo dolore ex Lorem amet eiusmod ullamco amet. Est irure do est dolore reprehenderit qui dolore ut duis sunt cillum excepteur voluptate. Quis aliquip velit et ea veniam proident adipisicing minim tempor esse magna. Deserunt eiusmod voluptate sit commodo ad magna enim ullamco. Tempor laboris adipisicing non amet proident magna do.\r\n",
-  "date": "2016-08-17T04:10:59 -03:00",
-  "comments": []
-}, {
-  "id": "5a0c22ec5f3c3a4635d78338",
-  "title": "commodo non",
-  "text": "Duis fugiat qui deserunt elit exercitation voluptate pariatur ut. Aute sunt veniam laboris elit adipisicing eiusmod culpa ea anim. Eiusmod non sint nostrud labore dolore velit qui esse. Deserunt est pariatur id dolor mollit officia cillum incididunt laborum magna elit nisi ad. Laborum ad esse elit elit. Excepteur dolor mollit elit ipsum elit adipisicing culpa est incididunt.\r\n",
-  "date": "2017-11-21T06:59:58 -03:00",
-  "comments": [{
-    "id": 0,
-    "name": "Taylor Shaw",
-    "text": "Est reprehenderit cupidatat deserunt aute ex aliquip cillum deserunt amet. Adipisicing Lorem labore sunt aliqua veniam. Dolore officia sunt nostrud deserunt nostrud do ea nisi sit Lorem exercitation qui deserunt proident. Non ipsum deserunt aliquip enim. Tempor sit ad quis voluptate.\r\n"
-  }, {
-    "id": 1,
-    "name": "Mercer Decker",
-    "text": "Nisi quis dolore culpa laborum. Sunt tempor nisi id sit culpa ex nisi excepteur occaecat laborum aliqua incididunt. Laboris minim enim in et tempor et ex incididunt. Aliqua ipsum adipisicing do qui duis sit consectetur sint mollit ullamco est ea esse elit.\r\n"
-  }, {
-    "id": 2,
-    "name": "Marcella Malone",
-    "text": "Commodo aute est officia enim proident nulla eiusmod exercitation Lorem ea. Dolor ullamco laboris reprehenderit id ad. Incididunt ut ea proident consequat velit incididunt consequat magna. Adipisicing ullamco consectetur quis labore quis ad occaecat cupidatat tempor. Veniam non anim tempor irure veniam exercitation commodo ipsum eiusmod qui in quis aliqua. Mollit consectetur dolor consequat ea occaecat ullamco nostrud velit cupidatat minim. Aliqua quis pariatur nulla cillum ipsum do ex enim veniam sit cupidatat.\r\n"
-  }]
-}, {
-  "id": "5a0c22ecd95fdf0f2973777b",
-  "title": "nulla enim",
-  "text": "Eu nulla et minim proident sunt do eiusmod ad aliqua duis cillum incididunt cupidatat mollit. Fugiat dolore est commodo ex consequat veniam laborum sit nostrud in elit exercitation. Nulla excepteur non cupidatat commodo commodo aliquip proident. Laborum cillum consectetur tempor cillum ex ullamco.\r\n",
-  "date": "2017-08-30T12:27:08 -03:00",
-  "comments": [{
-    "id": 0,
-    "name": "Hilda Garza",
-    "text": "Consequat officia tempor occaecat non elit ullamco. Irure do culpa aute ullamco veniam laboris qui dolore consequat. Irure commodo sint commodo dolor nostrud magna irure occaecat. Minim magna deserunt enim nulla dolor commodo do do voluptate officia minim in sunt in. Elit nulla consequat in reprehenderit magna officia est. Reprehenderit officia deserunt nisi laboris. Nulla veniam pariatur incididunt adipisicing pariatur aliqua cupidatat adipisicing proident duis.\r\n"
-  }, {
-    "id": 1,
-    "name": "Luella Whitney",
-    "text": "Eiusmod consectetur labore ea eiusmod laborum magna minim Lorem magna qui consectetur incididunt dolore laboris. Pariatur consectetur duis sit nisi elit dolor dolore ex occaecat pariatur quis incididunt. Reprehenderit ea et cillum irure mollit Lorem aliqua magna velit occaecat in.\r\n"
-  }, {
-    "id": 2,
-    "name": "Valarie Whitehead",
-    "text": "Dolor officia nostrud fugiat proident aliqua esse enim voluptate eu esse. Irure do laboris pariatur ut ex et aliqua esse deserunt aute ad consectetur laborum labore. Ut Lorem laboris commodo ea tempor incididunt commodo enim minim. Incididunt nulla fugiat est qui ullamco commodo cupidatat culpa excepteur magna dolore reprehenderit elit occaecat. Ipsum nostrud elit dolor aute sunt voluptate ad proident.\r\n"
-  }]
-}, {
-  "id": "5a0c22ec1d3b148b8c81dc81",
-  "title": "ipsum anim",
-  "text": "Cupidatat elit quis enim velit cillum esse amet voluptate magna ex irure consectetur sint ullamco. Velit dolore duis fugiat sunt et anim incididunt laboris et sint reprehenderit minim. Nostrud et do id pariatur dolore est anim laborum cupidatat Lorem laborum laborum consectetur cupidatat.\r\n",
-  "date": "2017-11-19T12:40:12 -03:00",
-  "comments": [{
-    "id": 0,
-    "name": "Ramirez Browning",
-    "text": "Officia excepteur voluptate eiusmod duis exercitation excepteur culpa do est consequat nulla. Culpa duis exercitation Lorem culpa sunt nisi. Aliquip eu sit ex qui.\r\n"
-  }, {
-    "id": 1,
-    "name": "Haley Allison",
-    "text": "Ea id veniam aute eu consectetur. Cupidatat reprehenderit reprehenderit anim incididunt quis ea cupidatat do ullamco. Velit pariatur voluptate eiusmod et. Pariatur aliquip nulla exercitation reprehenderit ad est nostrud excepteur minim culpa est aute laborum occaecat.\r\n"
-  }]
-}];
+
+var _fixtures = __webpack_require__(53);
+
+var _constants = __webpack_require__(8);
+
+exports.default = function () {
+  var commentsState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _fixtures.normalizedComments;
+  var action = arguments[1];
+  var type = action.type,
+      payload = action.payload;
+
+
+  switch (type) {
+    case _constants.DELETE_ARTICLE:
+      return articleState.filter(function (article) {
+        return article.id != payload.id;
+      });
+  }
+
+  return commentsState;
+};
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29572,7 +29919,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _constants = __webpack_require__(14);
+var _constants = __webpack_require__(8);
 
 var defaultFilters = {
   selected: [],
@@ -29605,172 +29952,6 @@ exports.default = function () {
 
   return filters;
 };
-
-/***/ }),
-/* 144 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.filtratedArticlesSelector = undefined;
-
-var _reselect = __webpack_require__(145);
-
-var filtersGetter = function filtersGetter(state) {
-  return state.filters;
-};
-var articlesGetter = function articlesGetter(state) {
-  return state.articles;
-};
-
-var filtratedArticlesSelector = exports.filtratedArticlesSelector = (0, _reselect.createSelector)(filtersGetter, articlesGetter, function (filters, articles) {
-  var selected = filters.selected,
-      _filters$dateRange = filters.dateRange,
-      from = _filters$dateRange.from,
-      to = _filters$dateRange.to;
-
-
-  return articles.filter(function (article) {
-    var published = Date.parse(article.date);
-
-    return (!selected.length || selected.includes(article.id)) && (!from || !to || published > from && published < to);
-  });
-});
-
-/***/ }),
-/* 145 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.defaultMemoize = defaultMemoize;
-exports.createSelectorCreator = createSelectorCreator;
-exports.createStructuredSelector = createStructuredSelector;
-function defaultEqualityCheck(a, b) {
-  return a === b;
-}
-
-function areArgumentsShallowlyEqual(equalityCheck, prev, next) {
-  if (prev === null || next === null || prev.length !== next.length) {
-    return false;
-  }
-
-  // Do this in a for loop (and not a `forEach` or an `every`) so we can determine equality as fast as possible.
-  var length = prev.length;
-  for (var i = 0; i < length; i++) {
-    if (!equalityCheck(prev[i], next[i])) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-function defaultMemoize(func) {
-  var equalityCheck = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : defaultEqualityCheck;
-
-  var lastArgs = null;
-  var lastResult = null;
-  // we reference arguments instead of spreading them for performance reasons
-  return function () {
-    if (!areArgumentsShallowlyEqual(equalityCheck, lastArgs, arguments)) {
-      // apply arguments instead of spreading for performance.
-      lastResult = func.apply(null, arguments);
-    }
-
-    lastArgs = arguments;
-    return lastResult;
-  };
-}
-
-function getDependencies(funcs) {
-  var dependencies = Array.isArray(funcs[0]) ? funcs[0] : funcs;
-
-  if (!dependencies.every(function (dep) {
-    return typeof dep === 'function';
-  })) {
-    var dependencyTypes = dependencies.map(function (dep) {
-      return typeof dep;
-    }).join(', ');
-    throw new Error('Selector creators expect all input-selectors to be functions, ' + ('instead received the following types: [' + dependencyTypes + ']'));
-  }
-
-  return dependencies;
-}
-
-function createSelectorCreator(memoize) {
-  for (var _len = arguments.length, memoizeOptions = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    memoizeOptions[_key - 1] = arguments[_key];
-  }
-
-  return function () {
-    for (var _len2 = arguments.length, funcs = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-      funcs[_key2] = arguments[_key2];
-    }
-
-    var recomputations = 0;
-    var resultFunc = funcs.pop();
-    var dependencies = getDependencies(funcs);
-
-    var memoizedResultFunc = memoize.apply(undefined, [function () {
-      recomputations++;
-      // apply arguments instead of spreading for performance.
-      return resultFunc.apply(null, arguments);
-    }].concat(memoizeOptions));
-
-    // If a selector is called with the exact same arguments we don't need to traverse our dependencies again.
-    var selector = defaultMemoize(function () {
-      var params = [];
-      var length = dependencies.length;
-
-      for (var i = 0; i < length; i++) {
-        // apply arguments instead of spreading and mutate a local list of params for performance.
-        params.push(dependencies[i].apply(null, arguments));
-      }
-
-      // apply arguments instead of spreading for performance.
-      return memoizedResultFunc.apply(null, params);
-    });
-
-    selector.resultFunc = resultFunc;
-    selector.recomputations = function () {
-      return recomputations;
-    };
-    selector.resetRecomputations = function () {
-      return recomputations = 0;
-    };
-    return selector;
-  };
-}
-
-var createSelector = exports.createSelector = createSelectorCreator(defaultMemoize);
-
-function createStructuredSelector(selectors) {
-  var selectorCreator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : createSelector;
-
-  if (typeof selectors !== 'object') {
-    throw new Error('createStructuredSelector expects first argument to be an object ' + ('where each property is a selector, instead received a ' + typeof selectors));
-  }
-  var objectKeys = Object.keys(selectors);
-  return selectorCreator(objectKeys.map(function (key) {
-    return selectors[key];
-  }), function () {
-    for (var _len3 = arguments.length, values = Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-      values[_key3] = arguments[_key3];
-    }
-
-    return values.reduce(function (composition, value, index) {
-      composition[objectKeys[index]] = value;
-      return composition;
-    }, {});
-  });
-}
 
 /***/ })
 /******/ ]);

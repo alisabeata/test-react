@@ -14,7 +14,7 @@ function CommentList({comments = [], isOpen, toggleOpen}) {
       return <p>No comment yet</p>;
     }
 
-    const CommentElements = comments.map((comment) => <li key={comment.id}><Comment comment = {comment} /></li>);
+    const CommentElements = comments.map((id) => <li key={id}><Comment id = {id} /></li>);
 
     return (
       <div>

@@ -1,20 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {commentSelector} from '../selectors/index';
 
- function Comment({comment}) {
+function Comment({comment}) {
   return (
     <div>
-      <strong>{comment.name}</strong><br />
+      <strong>{comment.user}</strong><br />
       <p>{comment.text}</p>
     </div>
   )
 }
 
 Comment.propTypes = {
+  id: PropTypes.string.isRequired,
+  // from connect
   comment: PropTypes.shape({
-    name: PropTypes.string.isRequired,
+    user: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired
   })
 };
 
-export default Comment;
+export default connect((state, ownProps) => {
+  return {
+    comment: commentSelector(state, ownProps)
+  }
+})(Comment);
