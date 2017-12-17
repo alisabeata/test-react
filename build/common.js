@@ -26671,11 +26671,17 @@ Comment.propTypes = {
   })
 };
 
-exports.default = (0, _reactRedux.connect)(function (state, ownProps) {
-  return {
-    comment: (0, _index.commentSelector)(state, ownProps)
+var mapsStateToProps = function mapsStateToProps() {
+  var commentSelector = (0, _index.commentSelectorFactory)();
+
+  return function (state, ownProps) {
+    return {
+      comment: commentSelector(state, ownProps)
+    };
   };
-})(Comment);
+};
+
+exports.default = (0, _reactRedux.connect)(mapsStateToProps)(Comment);
 
 /***/ }),
 /* 109 */
@@ -27133,7 +27139,7 @@ exports.default = function (OriginalComponent) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.commentSelector = exports.filtratedArticlesSelector = undefined;
+exports.commentSelectorFactory = exports.filtratedArticlesSelector = undefined;
 
 var _reselect = __webpack_require__(118);
 
@@ -27164,11 +27170,13 @@ var filtratedArticlesSelector = exports.filtratedArticlesSelector = (0, _reselec
   });
 });
 
-var commentSelector = exports.commentSelector = (0, _reselect.createSelector)(commentsGetter, idGetter, function (comments, id) {
-  return comments.find(function (comment) {
-    return comment.id === id;
+var commentSelectorFactory = exports.commentSelectorFactory = function commentSelectorFactory() {
+  return (0, _reselect.createSelector)(commentsGetter, idGetter, function (comments, id) {
+    return comments.find(function (comment) {
+      return comment.id === id;
+    });
   });
-});
+};
 
 /***/ }),
 /* 118 */
